@@ -11,23 +11,27 @@ html {
     font-size: 62.5%;
 }
 
-* {
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
-    background-color: var(--primario);
-    font-size: var(--fuente);
+    font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
-    line-height: 2;
 }
 
-.container {
-    height: auto;
-    max-width: 1200px;
-    width: 100%;
+img {
+    max-width: 100%;
 }
 
+h1 {
+    font-size: 4rem;
+}
+.logo {
+    height: 8rem;
+}
 .navbar-collapse {
     flex-grow: 0;
 }
@@ -35,17 +39,23 @@ body {
 .container-fluid {
     background-color: rgb(201, 53, 53);
     padding: 0 4rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.66);
 }
 
 .dropdown-menu {
     background-color: rgb(201, 53, 53);
     border: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.66);
+    font-size: 1.4rem;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
+    text-transform: uppercase;
+    font-weight: bold;
     padding: 0 1.5rem;
+    margin-bottom: 1rem;
 }
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-    background-color: #ffffff;
+    color: white;
 }
 #inicio {
     height: 100vh;
@@ -74,10 +84,79 @@ body {
 }
 
 #nosotros {
-    height: 100vh;
+    height: 85vh;
     width: 100%;
 }
 .container-nosotros {
-    height: 100vh;
+    height: 85vh;
     width: 100%;
+    padding: 2rem;
+}
+.container-info_nosotros {
+    padding: 2rem;
+}
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+.dos-columnas_nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+/** CODIGO AQUI **/
+@media (max-width: 768px){
+    .dos-columnas_nosotros{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+#contactanos {
+    height: 90vh;
+    width: 100%;
+}
+
+.container-contactanos {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+.title-contacto {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.container-form_contacto {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    background-color: red;
+    padding: 2rem;
+    height: auto;
+    width: 100%;
+}
+.dos-columnas_contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+/** CODIGO AQUI **/
+@media (max-width: 768px){
+    .dos-columnas_contacto{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.footer {
+    height: 50vh;
+    width: 100%;
+    background-color: #000;
 }

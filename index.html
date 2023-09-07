@@ -18,16 +18,16 @@
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid fixed-top">
-      <div class="logo">
-        <h1>Centro cultural</h1>
+      <div class="logo-container">
+        <a  href=""><img class="logo" src="img/logo (1).svg" alt=""></a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link" href="#">Inicio</a>
-          <a class="nav-link" href="#">Nosotros</a>
+          <a class="nav-link" href="#inicio">Inicio</a>
+          <a class="nav-link" href="#nosotros">Nosotros</a>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Ofrecemos
@@ -54,12 +54,60 @@
     </section>
 
     <section id="nosotros">
-      <div class="container-nosotros">
-        
+        <div class="container-nosotros contenedor">
+          <article class="dos-columnas_nosotros">
+            <div class="container-img_nosotros">
+              <img src="img/nosotros.jpg">
+            </div>
+            <div class="container-info_nosotros">
+              <h1>Nosotros</h1>
+              <p>
+                Maecenas maximus urna vitae nisl semper, id volutpat ipsum scelerisque. Aenean nec ipsum finibus, eleifend dolor at, venenatis risus. Quisque varius orci et augue scelerisque luctus.
+                Maecenas maximus urna vitae nisl semper, id volutpat ipsum scelerisque. Aenean nec ipsum finibus, eleifend dolor at, venenatis risus. Quisque varius orci et augue scelerisque luctus.
+              </p>
+            </div>  
+          </article>
       </div>
     </section>
   
 
+    <section id="contactanos">
+      <h2 class="text-center title-contacto">contactanos</h2>
+      <div class="container-contactanos dos-columnas_contacto">
+        <div class="container-info_contacto redes">
+          <h1>seguinos en nuestras redes</h1> 
+          <br>
+          <br>
+          <h1>seguinos en nuestras redes</h1> 
+          <br>
+          <br>
+          <h1>seguinos en nuestras redes</h1> 
+          <br>
+          <br>
+          <h1>seguinos en nuestras redes</h1> 
+        </div>
+        <div class="container-form_contacto">
+          <form class="form" action="">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+              <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="+00 0000-000000">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+
+    </footer>
 
 
   <script src="lib/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
