@@ -1,0 +1,83 @@
+:root {
+    --fuente: 'Yanone Kaffeesatz', sans-serif;
+
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primario);
+    font-size: var(--fuente);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.container {
+    height: auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.container-fluid {
+    background-color: rgb(201, 53, 53);
+    padding: 0 4rem;
+}
+
+.dropdown-menu {
+    background-color: rgb(201, 53, 53);
+    border: none;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0 1.5rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    background-color: #ffffff;
+}
+#inicio {
+    height: 100vh;
+    width: 100%;
+}
+.carousel-item {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: no-repeat center center scroll;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+}
+.imagen1carousel {
+    background-image: url("../img/inicio1.jpg");
+
+}
+
+.imagen2carousel {
+    background-image: url("../img/inicio2.jpg");
+}
+
+.imagen3carousel {
+    background-image: url("../img/inicio3.jpg");
+}
+
+#nosotros {
+    height: 100vh;
+    width: 100%;
+}
+.container-nosotros {
+    height: 100vh;
+    width: 100%;
+}
